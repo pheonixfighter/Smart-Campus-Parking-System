@@ -30,7 +30,7 @@ An ESP32 S3
 
 ### State Transition Diagram
 
-![The State Transition diagram for the traffic congestion prevention unit](./docs/TrafficCongestionPreventionFSMDiagram.svg)
+![The State Transition diagram for the traffic congestion prevention unit](./docs/TrafficCongestionPreventionFSMDiagram.drawio.png)
 
 ---
 
