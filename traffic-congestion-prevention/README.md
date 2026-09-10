@@ -6,16 +6,17 @@ Monitors the vehicle queue at the parking lot entrance. When a queue is detected
 ---
 
 ## Assigned Member
-[NAME]
+Robert
 
 ## Language Used
-[e.g. SystemVerilog / Python / C++]
+Arduino C++
 
 ## Hardware/Device
-[e.g. FPGA DE10-Nano / Arduino Uno / Raspberry Pi]
+An ESP32 S3 
 
 ## Sensors/Components
-[list here — e.g. IR/ultrasonic queue sensors, traffic signal controller interface, LED queue indicator]
+-Two HC-SR04 ultrasonic sensors
+
 
 ---
 
@@ -28,21 +29,19 @@ Monitors the vehicle queue at the parking lot entrance. When a queue is detected
 | `STOP` | Halt new vehicle admittance; signal external traffic system to redirect |
 
 ### State Transition Diagram
-```
-IDLE ──[queue length > threshold]──► QUEUE_DETECTED
- ▲                                         │
- │                                         ▼
- │                                        STOP
- │                                         │
- └─────────────[queue cleared]─────────────┘
-```
+
+![The State Transition diagram for the traffic congestion prevention unit](./docs/TrafficCongestionPreventionFSMDiagram.drawio)
 
 ---
 
 ## Interface/Communication
-[how this module talks to others — e.g., receives space count from space-management-counter; sends STOP signal to entrance-gate-module to deny new entries; notifies iot-dashboard-hps to display congestion warning on dashboard]
+This module sends a DC signal to entrance gate module to tell it to not open when there is a vehicle detected on both sides of the gate
 
 ---
 
 ## How to Run/Build
-[instructions here]
+### 1. Attatch the following component pins to the following ESP32 pins.  
+
+2. 
+2. 
+2. 
